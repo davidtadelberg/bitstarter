@@ -1,5 +1,4 @@
 var express = require('express');
-var connect = require('connect');
 var fs = require('fs');
 var htmlfile = "index.html";
 
