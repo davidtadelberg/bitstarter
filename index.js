@@ -1,8 +1,9 @@
 var express = require('express');
 var fs = require('fs');
-var htmlfile = "index.html";
+var htmlfile = "friendly.html";
 
 var app = express();
+app.use("/styles", express.static(__dirname + "/styles"));
 
 app.get('/', function(request, response) {
   response.send(fs.readFileSync(htmlfile).toString());
